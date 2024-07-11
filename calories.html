@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calories.css" />
+    <title>Calorie Counter</title>
+</head>
+
+<body>
+    <main>
+        <div class="navbar">
+            <img src="images/gym_peak_logo.png" alt="" class="logo">
+            <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="insight.html">Insight</a></li>
+                <li><a href="calories.html" class="active">Calometer</a></li>
+                <li><a href="review.html" >Review</a></li>
+            </ul>
+    
+            <!-- login-signup section -->
+            <div class="login-signup">
+                <button class="login" onclick="location.href='login.html'"><span></span>Login</button>
+                <div class="signup">
+                    <a href="signup.html">Sign Up</a>
+                </div>
+                <a href="#" class="show-side"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#ffa500">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a>
+            </div>
+    
+            <div class="sideways">
+                <ul class="sideways-list">
+                    <li id="remove"><a href="#"><svg xmlns="http ://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="insight.html">Insight</a></li>
+                    <li><a href="calories.html" class="active">Calometer</a></li>
+                    <li><a href="review.html" >Review</a></li>
+                </ul>
+    
+                <!-- login-signup section -->
+                <div class="sideways-login-signup">
+                    <button class="sideways-login" onclick="location.href='login.html'">Login</button>
+                    <div class="sideways-signup">
+                        <a href="signup.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Calorie Counter</h1>
+        <div class="container">
+            <form id="calorie-counter">
+                <label for="budget">Budget</label>
+                <input type="number" min="0" id="budget" placeholder="Daily calorie budget" required />
+                <fieldset id="breakfast">
+                    <legend>Breakfast</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="lunch">
+                    <legend>Lunch</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="dinner">
+                    <legend>Dinner</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="snacks">
+                    <legend>Snacks</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="exercise">
+                    <legend>Exercise</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <div class="controls">
+                    <span>
+                        <label for="entry-dropdown">Add food or exercise:</label>
+                        <select id="entry-dropdown" name="options">
+                            <option value="breakfast" selected>Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snacks">Snacks</option>
+                            <option value="exercise">Exercise</option>
+                        </select>
+                        <button type="button" id="add-entry">Add Entry</button>
+                    </span>
+                </div>
+                <div>
+                    <button type="submit">
+                        Calculate Remaining Calories
+                    </button>
+                    <button type="button" id="clear">Clear</button>
+                </div>
+            </form>
+            <div id="output" class="output hide"></div>
+        </div>
+    </main>
+    <script src="./calories.js"></script>
+</body>
+
+</html>

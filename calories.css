@@ -1,0 +1,292 @@
+:root {
+    --light-grey: #f5f6f7;
+    --dark-blue: #0a0a23;
+    --fcc-blue: #1b1b32;
+    --light-yellow: #fecc4c;
+    --dark-yellow: #feac32;
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+  }
+  
+  body {
+    background-color: #363d42;
+    color: var(--light-grey);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffa500;
+  }
+  .navbar {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #b68557;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    height: 6vh;
+    width: 5.5vw;
+    border-radius: 30px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.list li {
+    list-style: none;
+    padding: 1.5vw;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+}
+
+.navbar .list li a.active {
+    font-weight: bold;
+    color: #ffa500;
+}
+
+.list li:hover {
+    transform: scale(1.3);
+    transition: 0.2s ease-in;
+}
+
+.list a:hover {
+    color: orange;
+}
+
+.login-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    position: relative;
+    border: 2px solid #ffa500;
+    background-color: transparent;
+    color: white;
+    font-size: 2vh;
+    border-radius: 30px;
+    padding: 0.6vw 1vw;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.login span {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #be5f06, #cc8747, #b68557);
+    z-index: -1;
+    transition: width 0.4s ease-in;
+}
+
+.login:hover span {
+    width: 100%;
+}
+
+.signup a {
+    text-decoration: none;
+    margin-left: 0.5vw;
+    color: white;
+    font-size: 2vh;
+}
+
+.signup a:hover {
+    color: #10c010;
+}
+
+.show-side {
+    padding-left: 10px;
+    display: none;
+}
+
+.sideways {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 400px;
+    background-color: #363d4280;
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+    transition: right 0.3s ease-in-out;
+}
+
+.sideways-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sideways-list li {
+    list-style: none;
+    width: 100%;
+}
+
+.sideways-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    width: 100%;
+}
+
+.sideways-login-signup {
+    margin-top: 30px;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sideways-login {
+    border: 2px solid #ffa500;
+    background-color: transparent;
+    color: white;
+    font-size: 2vh;
+    padding: 0.6vw 1vw;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sideways-signup {
+    margin-top: 30px;
+}
+
+.sideways-signup a {
+    text-decoration: none;
+    margin-left: 0.5vw;
+    color: white;
+    font-size: 2vh;
+}
+
+.sideways-list .active {
+    color: #ffa500;
+}
+
+@media (max-width:800px) {
+
+    .list,
+    .login,
+    .signup {
+        display: none;
+    }
+
+    .show-side {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 7vh;
+        width:10%;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .sideways {
+        width: 100%;
+    }
+    .logo {
+        height: 7vh;
+        width: 50px;
+        border-radius: 20px;
+    }
+}
+
+  .container {
+    width: 90%;
+    max-width: 680px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  }
+  
+  h1,
+  .container,
+  .output {
+    margin: 20px auto;
+  }
+  
+  label,
+  legend {
+    font-weight: bold;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--light-yellow);
+    border: 2px solid var(--dark-yellow);
+  }
+  
+  button,
+  input,
+  select {
+    min-height: 24px;
+    color: var(--dark-blue);
+  }
+  
+  fieldset,
+  label,
+  button,
+  input,
+  select {
+    margin-bottom: 10px;
+  }
+  
+  .output {
+    border: 2px solid var(--light-grey);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .output span {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .surplus {
+    color: var(--light-pink);
+  }
+  
+  .deficit {
+    color: var(--light-green);
+  }

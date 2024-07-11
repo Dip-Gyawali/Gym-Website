@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loading screen -->
+    <div class="loading-screen">
+        <h1>WELCOME</h1>
+        <h1>TO</h1>
+        <h1>FITNESS</h1>
+        <h2 class="load-count">0</h2>
+    </div>
+
+    <!-- content -->
+    <div class="main">
+
+        <!-- cursor for navigation -->
+        <div class="cursor"></div>
+        <!-- home contents -->
+        <div class="home">
+            <!-- navbar -->
+            <div class="navbar">
+                <img src="images/gym_peak_logo.png" alt="" class="logo">
+                <ul class="list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="insight.html">Insight</a></li>
+                    <li><a href="calories.html">Calometer</a></li>
+                    <li><a href="review.html" >Review</a></li>
+                </ul>
+        
+                <!-- login-signup section -->
+                <div class="login-signup">
+                    <button class="login" onclick="location.href='login.html'"><span></span>Login</button>
+                    <div class="signup">
+                        <a href="signup.html">Sign Up</a>
+                    </div>
+                    <a href="#" class="show-side"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                            width="24px" fill="#ffa500">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a>
+                </div>
+        
+                <div class="sideways">
+                    <ul class="sideways-list">
+                        <li id="remove"><a href="#"><svg xmlns="http ://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="insight.html">Insight</a></li>
+                        <li><a href="calories.html">Calometer</a></li>
+                        <li><a href="review.html" >Review</a></li>
+                    </ul>
+        
+                    <!-- login-signup section -->
+                    <div class="sideways-login-signup">
+                        <button class="sideways-login" onclick="location.href='login.html'">Login</button>
+                        <div class="sideways-signup">
+                            <a href="signup.html">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- inside body -->
+            <div class="body-content">
+                <h4>Shape Your Body</h4>
+                <h2>Be <span class="strong">Strong</span><br> Training Hard</h2>
+                <button class="membership" onclick="location.href='membership.html'">Membership</button>
+            </div>
+        </div>
+
+
+        <!-- services section -->
+
+        <div class="services">
+            <div class="service-heading">
+                <h1 class="service-head-1">Explore Our</h1>
+                <h1 class="service-head-2">Program</h1>
+                <h1 class="service-head-3">To Shape You</h1>
+                <!--Explore Our Program To Shape You -->
+            </div>
+            <div class="service-content">
+                <div class="box">
+                    <img src="./images/image1.jpg" alt="">
+                    <h1>Physical Fitness</h1>
+                </div>
+                <div class="box">
+                    <img src="./images/image2.jpg" alt="">
+                    <h1>Weight Gaining</h1>
+                </div>
+                <div class="box">
+                    <img src="./images/image3.jpg" alt="">
+                    <h1>Strength Traning</h1>
+                </div>
+                <div class="box">
+                    <img src="./images/image4.jpg" alt="">
+                    <h1>Fat Loss</h1>
+                </div>
+                <div class="box">
+                    <img src="./images/image5.jpg" alt="">
+                    <h1>WeightLifting</h1>
+                </div>
+                <div class="box">
+                    <img src="./images/about.jpg" alt="">
+                    <h1>Cardio</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- responsive line -->
+        <div class="line">
+            <svg width="1000" height="200">
+                <path d="M -600 100 Q 600 100 1200 100" stroke="#ffa500" stroke-width="3" fill="transparent" />
+            </svg>
+        </div>
+
+        <!-- reason to join us -->
+        <div class="reasons">
+            <div class="reason-left">
+                <img src="https://www.hotwebdesign.gr/images/data/why_choose_us.png" alt="">
+            </div>
+            <div class="reason-right">
+                <h1 class="reason-head">Why Choose Us?</h1>
+                <div class="reason-list">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>OVER 140+ EXPERT COACHES</h3>
+                </div>
+                <div class="reason-list">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>FREE PROGRAM FOR NEW MEMBER</h3>
+                </div>
+                <div class="reason-list">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>PROPER GYM ENVIRONMENT</h3>
+                </div>
+                <div class="reason-list">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>200+ MODERN EQUIPMENTS</h3>
+                </div>
+                <div class="reason-partner">
+                    <h3>Our Partners</h3>
+                    <div class="partner-logo">
+                        <img src="./images/adidas-logo.jpg" alt="">
+                        <img src="./images/nike.jpg" alt="">
+                        <img src="./images/puma-logo-and-art-free-vector.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- free trial animation -->
+
+        <div class="animation">
+            <div class="move">
+                <div class="marque">
+                    <h1>Free Trial</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marque">
+                    <h1>Free Trial</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marque">
+                    <h1>Free Trial</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marque">
+                    <h1>Free Trial</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marque">
+                    <h1>Free Trial</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marque">
+                    <h1>Free Trial</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marque">
+                    <h1>Free Trial</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marque">
+                    <h1>Free Trial</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marque">
+                    <h1>Free Trial</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- one day trial -->
+        <div class="Free-trial">
+            <div class="trial-left">
+                <h2>Free!! Free!!</h2>
+                <p>We are offering Free Trial With :</p>
+                <div class="trial-offer">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Weight Training</h3>
+                </div>
+                <div class="trial-offer">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Full Cardio</h3>
+                </div>
+                <div class="trial-offer">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Gym Tour and Traning</h3>
+                </div>
+                <div class="trial-offer">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Shower and Sauna Services</h3>
+                </div>
+                <button class="trial-btn">Join Now</button>
+            </div>
+            <div class="trial-right">
+                <img src="./images/free_trial.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- counter section   -->
+
+        <div class="counters">
+            <div class="count-sec">
+                <div class="counter">
+                    <h1><span data-count="5000">0+</span></h1>
+                    <h3>Family</h3>
+                </div>
+                <div class="counter">
+                    <h1><span data-count="300">0+</span></h1>
+                    <h3>Expert Trainers</h3>
+                </div>
+                <div class="counter">
+                    <h1><span data-count="14">0+</span></h1>
+                    <h3>Outlets</h3>
+                </div>
+                <div class="counter">
+                    <h1><span data-count="4">0+</span></h1>
+                    <h3>Countries</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="happy-client">
+            <div class="client-section">
+                <div class="client-sec1">
+                    <h3>What Our Happy Client Says About Us </h3>
+                    <p>Let's see what our happy clients have to say from all accross the globe. Your reviews help us to
+                        get connected even more</p>
+                    <div class="main-review">
+                        <i class="fa-solid fa-star checked"></i>
+                        <p class="main-review-p">4.8</p>
+                    </div>
+                    <p>(450+ Reviews)</p>
+                </div>
+                <div class="client-sec2">
+                    <div class="client-sce2-head">
+                        <img src="./images/2edd02160b51797f7adb807a79d96d36.jpg" alt="">
+                        <p>Hunter Hunt</p>
+                    </div>
+                    <div class="client-sec2-review">
+                        <i class="fa-solid fa-star sec2-review"></i>
+                        <i class="fa-solid fa-star sec2-review"></i>
+                        <i class="fa-solid fa-star sec2-review"></i>
+                        <i class="fa-solid fa-star sec2-review"></i>
+                        <i class="fa-solid fa-star sec2-review"></i>
+                    </div>
+                    <div class="client-sec2-body">
+                        <p>This is the best Gym in town. With great trainers, well equiped machines and best
+                            environment. Been working here for 9 months and have a great experience. Affortable price
+                            with proper parking space and lovely environment. For me its a 5 star Gym very much
+                            recommended if you are new to gym, Trainers here are friendly and awsome. They even have a
+                            coffee dispensor for free coffee and a sauna and shower with hot and cold water.</p>
+                    </div>
+                </div>
+                <div class="client-sec3">
+                    <div class="client-sce3-head">
+                        <img src="./images/beautiful-girl-image-art-and-illustration-vector.jpg" alt="">
+                        <p>Scarlotte Lin-Lin</p>
+                    </div>
+                    <div class="client-sec3-review">
+                        <i class="fa-solid fa-star sec3-review"></i>
+                        <i class="fa-solid fa-star sec3-review"></i>
+                        <i class="fa-solid fa-star sec3-review"></i>
+                        <i class="fa-solid fa-star sec3-review"></i>
+                        <i class="fa-solid fa-star sec3-review"></i>
+                    </div>
+                    <div class="client-sec3-body">
+                        <p>This is the best Gym in town. With great trainers, well equiped machines and best
+                            environment. Been working here for 9 months and have a great experience. Affortable price
+                            with proper parking space and lovely environment. For me its a 5 star Gym very much
+                            recommended if you are new to gym, Trainers here are friendly and awsome. They even have a
+                            coffee dispensor for free coffee and a sauna and shower with hot and cold water.</p>
+                    </div>
+                </div>
+                <div class="client-sec4">
+                    <div class="client-sce4-head">
+                        <img src="./images/beautiful-girl-with-blue-hair-avatar-of-woman-for-social-network-vector.jpg"
+                            alt="">
+                        <p>Stacy Dawson</p>
+                    </div>
+                    <div class="client-sec2-review">
+                        <i class="fa-solid fa-star sec4-review"></i>
+                        <i class="fa-solid fa-star sec4-review"></i>
+                        <i class="fa-solid fa-star sec4-review"></i>
+                        <i class="fa-solid fa-star sec4-review"></i>
+                        <i class="fa-solid fa-star sec4-review"></i>
+                    </div>
+                    <div class="client-sec4-body">
+                        <p>This is the best Gym in town. With great trainers, well equiped machines and best
+                            environment. Been working here for 9 months and have a great experience. Affortable price
+                            with proper parking space and lovely environment. For me its a 5 star Gym very much
+                            recommended if you are new to gym, Trainers here are friendly and awsome. They even have a
+                            coffee dispensor for free coffee and a sauna and shower with hot and cold water.</p>
+                    </div>
+                </div>
+                <div class="client-sec5">
+                    <div class="client-sce5-head">
+                        <img src="./images/young-man-cartoon_24640-35046.jpg" alt="">
+                        <p>Young Man</p>
+                    </div>
+                    <div class="client-sec5-review">
+                        <i class="fa-solid fa-star sec5-review"></i>
+                        <i class="fa-solid fa-star sec5-review"></i>
+                        <i class="fa-solid fa-star sec5-review"></i>
+                        <i class="fa-solid fa-star sec5-review"></i>
+                        <i class="fa-solid fa-star sec5-review-no"></i>
+                    </div>
+                    <div class="client-sec5-body">
+                        <p>This is the best Gym in town. With great trainers, well equiped machines and best
+                            environment. Been working here for 9 months and have a great experience. Affortable price
+                            with proper parking space and lovely environment. For me its a 5 star Gym very much
+                            recommended if you are new to gym, Trainers here are friendly and awsome. They even have a
+                            coffee dispensor for free coffee and a sauna and shower with hot and cold water.</p>
+                    </div>
+                </div>
+
+                <div class="client-sec2">
+                    <div class="client-sce2-head">
+                        <img src="./images/2edd02160b51797f7adb807a79d96d36.jpg" alt="">
+                        <p>Hunter Hunt</p>
+                    </div>
+                    <div class="client-sec2-review">
+                        <i class="fa-solid fa-star sec2-review"></i>
+                        <i class="fa-solid fa-star sec2-review"></i>
+                        <i class="fa-solid fa-star sec2-review"></i>
+                        <i class="fa-solid fa-star sec2-review"></i>
+                        <i class="fa-solid fa-star sec2-review"></i>
+                    </div>
+                    <div class="client-sec2-body">
+                        <p>This is the best Gym in town. With great trainers, well equiped machines and best
+                            environment. Been working here for 9 months and have a great experience. Affortable price
+                            with proper parking space and lovely environment. For me its a 5 star Gym very much
+                            recommended if you are new to gym, Trainers here are friendly and awsome. They even have a
+                            coffee dispensor for free coffee and a sauna and shower with hot and cold water.</p>
+                    </div>
+                </div>
+                <div class="client-sec3">
+                    <div class="client-sce3-head">
+                        <img src="./images/beautiful-girl-image-art-and-illustration-vector.jpg" alt="">
+                        <p>Scarlotte Lin-Lin</p>
+                    </div>
+                    <div class="client-sec3-review">
+                        <i class="fa-solid fa-star sec3-review"></i>
+                        <i class="fa-solid fa-star sec3-review"></i>
+                        <i class="fa-solid fa-star sec3-review"></i>
+                        <i class="fa-solid fa-star sec3-review"></i>
+                        <i class="fa-solid fa-star sec3-review"></i>
+                    </div>
+                    <div class="client-sec3-body">
+                        <p>This is the best Gym in town. With great trainers, well equiped machines and best
+                            environment. Been working here for 9 months and have a great experience. Affortable price
+                            with proper parking space and lovely environment. For me its a 5 star Gym very much
+                            recommended if you are new to gym, Trainers here are friendly and awsome. They even have a
+                            coffee dispensor for free coffee and a sauna and shower with hot and cold water.</p>
+                    </div>
+                </div>
+                <div class="client-sec4">
+                    <div class="client-sce4-head">
+                        <img src="./images/beautiful-girl-with-blue-hair-avatar-of-woman-for-social-network-vector.jpg"
+                            alt="">
+                        <p>Stacy Dawson</p>
+                    </div>
+                    <div class="client-sec2-review">
+                        <i class="fa-solid fa-star sec4-review"></i>
+                        <i class="fa-solid fa-star sec4-review"></i>
+                        <i class="fa-solid fa-star sec4-review"></i>
+                        <i class="fa-solid fa-star sec4-review"></i>
+                        <i class="fa-solid fa-star sec4-review"></i>
+                    </div>
+                    <div class="client-sec4-body">
+                        <p>This is the best Gym in town. With great trainers, well equiped machines and best
+                            environment. Been working here for 9 months and have a great experience. Affortable price
+                            with proper parking space and lovely environment. For me its a 5 star Gym very much
+                            recommended if you are new to gym, Trainers here are friendly and awsome. They even have a
+                            coffee dispensor for free coffee and a sauna and shower with hot and cold water.</p>
+                    </div>
+                </div>
+                <div class="client-sec5">
+                    <div class="client-sce5-head">
+                        <img src="./images/young-man-cartoon_24640-35046.jpg" alt="">
+                        <p>Young Man</p>
+                    </div>
+                    <div class="client-sec5-review">
+                        <i class="fa-solid fa-star sec5-review"></i>
+                        <i class="fa-solid fa-star sec5-review"></i>
+                        <i class="fa-solid fa-star sec5-review"></i>
+                        <i class="fa-solid fa-star sec5-review"></i>
+                        <i class="fa-solid fa-star sec5-review-no"></i>
+                    </div>
+                    <div class="client-sec5-body">
+                        <p>This is the best Gym in town. With great trainers, well equiped machines and best
+                            environment. Been working here for 9 months and have a great experience. Affortable price
+                            with proper parking space and lovely environment. For me its a 5 star Gym very much
+                            recommended if you are new to gym, Trainers here are friendly and awsome. They even have a
+                            coffee dispensor for free coffee and a sauna and shower with hot and cold water.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="foot">
+            <div class="foot-row1">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Why Us</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Partnership</a></li>
+                </ul>
+            </div>
+            <div class="foot-row2">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Basic Yoga</a></li>
+                    <li><a href="#">Weight Training</a></li>
+                    <li><a href="#">Zumba</a></li>
+                    <li><a href="#">Weight Loss</a></li>
+                </ul>
+            </div>
+            <div class="foot-row3">
+                <h2>Help</h2>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="foot-row4">
+                <h2>Contact</h2>
+                <ul>
+                    <li><i class="fa-solid fa-phone foot-icon"></i><a href="#">About Us</a></li>
+                    <li><i class="fa-solid fa-envelope foot-icon"></i><a href="#">example@email.com</a></li>
+                    <li><i class="fa-solid fa-location-dot foot-icon"></i><a href="#">kathmandu,Nepal</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div class="end">
+            <p>Copyright &copy Gym-Web 2024</p>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

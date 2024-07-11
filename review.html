@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="images/gym_peak_logo.png" alt="" class="logo">
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="insight.html">Insight</a></li>
+            <li><a href="calories.html">Calometer</a></li>
+            <li><a href="review.html" class="active">Review</a></li>
+        </ul>
+
+        <!-- login-signup section -->
+        <div class="login-signup">
+            <button class="login" onclick="location.href='login.html'"><span></span>Login</button>
+            <div class="signup">
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <a href="#" class="show-side"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#ffa500">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></a>
+        </div>
+
+        <div class="sideways">
+            <ul class="sideways-list">
+                <li id="remove"><a href="#"><svg xmlns="http ://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="insight.html">Insight</a></li>
+                <li><a href="calories.html">Calometer</a></li>
+                <li><a href="review.html" class="active">Review</a></li>
+            </ul>
+
+            <!-- login-signup section -->
+            <div class="sideways-login-signup">
+                <button class="sideways-login" onclick="location.href='login.html'">Login</button>
+                <div class="sideways-signup">
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Welcome To Review Section</h1>
+        <p>Please dont use bad words. Review your Gym experience and problem you have encountered. We hope to fix them
+            as soon as possible</p>
+    </header>
+    <div class="main">
+        <div class="data-entry">
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="review.js"></script>
+</body>
+
+</html>

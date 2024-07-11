@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #363d42;
+}
+.content{
+    background-color: #ffa500;
+    height: 50vh;
+    width: 30%;
+    border-radius: 30px;
+    padding: 0 2vw;
+}
+.content h2{
+    text-align: center;
+    font-size: 2vw;
+    background: linear-gradient(90deg,#252524 10%,#1733d1 40%,#e9079d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.data-box1{
+    width: 100%;
+    height: 5vh;
+    margin: 1vw 0;
+    display: flex;
+    justify-content: space-between;
+}
+.data-box1 input{
+    width: 49%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    background: transparent;
+    padding: 0 0.9vw;
+    font-size: 0.9vw;
+    color: white;
+}
+.data-box1 input::placeholder{
+    color: white;
+}
+.data-box{
+    width: 100%;
+    height: 5vh;
+    margin: 1vw 0;
+}
+.data-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid #000000;
+    background: transparent;
+    border-radius: 30px;
+    padding: 0 0.9vw;
+    font-size: 0.9vw;
+    color: white;
+}
+.data-box input::placeholder{
+    color: white;
+}
+.term-accept{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9vw;
+}
+.term-accept a{
+   text-decoration: none;
+   color: black;
+}
+.term-accept a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+.btn-signup{
+    width: 100%;
+    height: 5vh;
+    margin-top: 0.5vw;
+    font-size: 0.9vw;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ .btn-signup:hover{
+     transform: scale(1.02);
+ }
+ .exist-acc{
+    text-align: center;
+    margin: 0.5vw;
+    font-size: 0.9vw;
+ }
+ .exist-acc a{
+    text-decoration: none;
+    color: black;
+ }
+ .exist-acc a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+ }
