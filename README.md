@@ -6,8 +6,8 @@ in making a animated and user friendly website
 ## Screenshots
 
 ![App Screenshot](images/screenshot.png)
-![App Screenshot](images/screenshot.png)
-![App Screenshot](images/screenshot.png)
+![App Screenshot](images/screenshot1.png)
+![App Screenshot](images/screenshot2.png)
 
 
 ## Visit the website :
