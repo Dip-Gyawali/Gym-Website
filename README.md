@@ -5,7 +5,10 @@ in making a animated and user friendly website
 
 ## Screenshots
 
-![App Screenshot](Images/Screenshot%202024-08-13%20135839.png)
+![App Screenshot](images/screenshot.png)
+![App Screenshot](images/screenshot.png)
+![App Screenshot](images/screenshot.png)
+
 
 ## Visit the website :
 [Gym Website](https://earnest-gelato-a7d42f.netlify.app/)
